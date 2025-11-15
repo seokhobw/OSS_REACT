@@ -1,13 +1,24 @@
 .App {
   text-align: center;
-  background-color: #f3f8ff;
-  padding: 50px;
+  background-color: #eef6ff; /* 하늘색 느낌 */
   min-height: 100vh;
+  padding-top: 40px;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
 }
 
 .main-title {
+  font-size: 2.5rem;
   color: #2c3e50;
-  font-size: 2.3rem;
   margin-bottom: 20px;
 }
 
@@ -29,4 +40,13 @@
 
 .custom-button:hover {
   background-color: #357ab8;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
